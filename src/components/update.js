@@ -23,7 +23,7 @@ export default function Update() {
            age,
            salary 
         })
-       .then(() =>{history.push('/read');
+       .then(() =>{history.push('/');
     })
 
     }

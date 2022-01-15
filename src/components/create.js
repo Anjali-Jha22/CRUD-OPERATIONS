@@ -22,7 +22,7 @@ let history = useHistory();
            age,
            salary 
         })
-       .then(() =>{history.push('/read')
+       .then(() =>{history.push('/')
     })
 
     }

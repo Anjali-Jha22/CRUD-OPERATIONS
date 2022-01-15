@@ -36,6 +36,7 @@ export default function Read() {
 
     return ( 
   <div className='table'>
+    <h3>All users</h3>
   <table>
   <tr>
     <th>ID</th>
@@ -59,7 +60,7 @@ export default function Read() {
             </Link>
         </td>
         <td>
-            <Link to ='/read'>
+            <Link to ='/'>
             <button onClick={()=> onDelete(data.id)}> 
               Delete</button>
             </Link>

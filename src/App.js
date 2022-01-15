@@ -1,4 +1,5 @@
 import './App.css';
+import Navbar from './components/navbar'
 import Create from './components/create';
 import Read from './components/read';
 import Update from './components/update';
@@ -8,13 +9,11 @@ function App() {
   return (
     <Router>
     <div className='main'>
-      <div>
-        <h3>React crud operations</h3>
-      </div>
+      <Navbar />
 
       <div>
       <Switch>
-      <Route exact path='/'>
+      <Route exact path='/create'>
         <Create/>
       </Route>
       </Switch>
@@ -22,7 +21,7 @@ function App() {
 
       <div style={{marginTop: 20}}>
       <Switch>
-      <Route exact path='/read'>
+      <Route exact path='/'>
         <Read/>
       </Route>
       </Switch>
